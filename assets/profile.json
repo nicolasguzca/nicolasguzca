@@ -1,0 +1,78 @@
+{
+  "user": "nick",
+  "host": "nickg.dev",
+  "about": [
+    [
+      "OS",
+      "macOS, Linux, AWS"
+    ],
+    [
+      "Role",
+      "Lead Engineer"
+    ],
+    [
+      "Teaching",
+      "Assoc. Professor, Universidad de La Sabana"
+    ],
+    [
+      "Uptime",
+      "{uptime}"
+    ],
+    [
+      "Stack.Web",
+      "React, Next.js"
+    ],
+    [
+      "Stack.Backend",
+      "Python, Node.js"
+    ],
+    [
+      "Stack.Mobile",
+      "React Native"
+    ],
+    [
+      "Stack.Cloud",
+      "AWS"
+    ],
+    [
+      "Languages",
+      "TypeScript, JavaScript, Python"
+    ],
+    [
+      "Hobbies",
+      "Brazilian Jiu-Jitsu, Warhammer 40K"
+    ]
+  ],
+  "research": [
+    [
+      [
+        "Citations",
+        "382"
+      ],
+      [
+        "h-index",
+        "4"
+      ]
+    ],
+    [
+      [
+        "Latest",
+        "AI & Cyber Defense, JAIGS 2026"
+      ]
+    ]
+  ],
+  "contact": [
+    [
+      "Web",
+      "nickg.dev"
+    ],
+    [
+      "LinkedIn",
+      "in/nicolas-guzman-045430146"
+    ],
+    [
+      "X",
+      "@nickg_dev"
+    ]
+  ]
+}

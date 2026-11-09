@@ -1,0 +1,55 @@
+# Refreshes the profile card and the swarm board once a day.
+#
+# fetch_stats.py reads the GitHub GraphQL API into cache/; the two build
+# scripts regenerate the SVGs from it. Only changed files are committed, so a
+# quiet day adds no commit.
+name: Refresh profile
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  # Rebuild straight away when the art, text or generators change.
+  push:
+    branches: [main]
+    paths:
+      - "assets/**"
+      - "tools/**"
+      - ".github/workflows/refresh.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 tools/fetch_stats.py
+
+      - name: Build card and swarm
+        run: |
+          python3 tools/build_card.py
+          python3 tools/build_swarm.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cache *.svg
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile stats"
+          git pull --rebase origin main
+          git push
