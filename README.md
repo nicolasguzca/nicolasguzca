@@ -7,6 +7,7 @@
 
 <p align="center">
   <a href="https://nickg.dev">nickg.dev</a> ·
+  <a href="mailto:me@nickg.dev">me@nickg.dev</a> ·
   <a href="https://www.linkedin.com/in/nicolas-guzman-045430146/">LinkedIn</a> ·
   <a href="https://twitter.com/nickg_dev">X</a> ·
   <a href="https://scholar.google.com/citations?user=U73VCEUAAAAJ&hl=en">Google Scholar</a> ·
