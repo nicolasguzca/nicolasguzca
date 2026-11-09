@@ -32,7 +32,10 @@ jobs:
 
       - name: Fetch stats
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The built-in token only sees public repos, so "Contributed to"
+          # undercounts. Add a classic PAT with read:user and repo as the
+          # STATS_TOKEN secret to count private ones too.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
         run: python3 tools/fetch_stats.py
 
