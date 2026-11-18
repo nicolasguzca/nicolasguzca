@@ -2036,7 +2036,7 @@
  {
   "date": "2026-10-21",
   "weekday": 3,
-  "count": 38,
+  "count": 40,
   "level": 4
  },
  {
@@ -2198,7 +2198,13 @@
  {
   "date": "2026-11-17",
   "weekday": 2,
-  "count": 3,
+  "count": 28,
+  "level": 3
+ },
+ {
+  "date": "2026-11-18",
+  "weekday": 3,
+  "count": 5,
   "level": 1
  }
 ]
