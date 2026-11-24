@@ -2192,7 +2192,13 @@
  {
   "date": "2026-11-23",
   "weekday": 1,
-  "count": 3,
+  "count": 36,
+  "level": 3
+ },
+ {
+  "date": "2026-11-24",
+  "weekday": 2,
+  "count": 10,
   "level": 1
  }
 ]
