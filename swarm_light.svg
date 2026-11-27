@@ -709,6 +709,7 @@ text{font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,'DejaVu Sans Mono','L
 <rect x="935.21" y="121.58" width="13.1" height="13.1" rx="2.62" fill="#6680f6"><animate attributeName="fill" values="#6680f6;#d9c3ea" keyTimes="0;0.39213" calcMode="discrete" dur="24.516s" repeatCount="indefinite"/></rect>
 <rect x="935.21" y="138.38" width="13.1" height="13.1" rx="2.62" fill="#3149C6"><animate attributeName="fill" values="#3149C6;#d9c3ea" keyTimes="0;0.39866" calcMode="discrete" dur="24.516s" repeatCount="indefinite"/></rect>
 <rect x="935.21" y="155.17" width="13.1" height="13.1" rx="2.62" fill="#ebe9f1"><animate attributeName="fill" values="#ebe9f1;#d9c3ea" keyTimes="0;0.61729" calcMode="discrete" dur="24.516s" repeatCount="indefinite"/></rect>
+<rect x="935.21" y="171.96" width="13.1" height="13.1" rx="2.62" fill="#ebe9f1"><animate attributeName="fill" values="#ebe9f1;#d9c3ea" keyTimes="0;0.62381" calcMode="discrete" dur="24.516s" repeatCount="indefinite"/></rect>
 <text x="824.5" y="228.64716981132077" font-size="11" text-anchor="end" class="m">Less</text>
 <rect x="832.50" y="217.54716981132077" width="13.1" height="13.1" rx="2.62" fill="#ebe9f1"/>
 <rect x="849.60" y="217.54716981132077" width="13.1" height="13.1" rx="2.62" fill="#c3cdfb"/>
