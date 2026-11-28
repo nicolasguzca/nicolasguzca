@@ -2218,5 +2218,11 @@
   "weekday": 5,
   "count": 0,
   "level": 0
+ },
+ {
+  "date": "2026-11-28",
+  "weekday": 6,
+  "count": 1,
+  "level": 1
  }
 ]
